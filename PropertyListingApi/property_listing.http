@@ -1,0 +1,28 @@
+###
+GET http://localhost:5162/properties
+
+###
+GET http://localhost:5162/properties/5
+
+###
+POST http://localhost:5162/properties/
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Property 2",
+  "address": "Nyarugenge"
+}
+
+###
+PUT http://localhost:5162/properties/1
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Property X",
+  "address": "Unknown"
+}
+
+###
+DELETE http://localhost:5162/properties/1
